@@ -38,20 +38,18 @@ public class Enlace {
             establecerConexion();
             Statement statement = obtenerConexion().createStatement();
             String data = String.format("INSERT INTO estudiante (nombre, apellido,"
-                    + "calificacion1, calificacion2, calificacion3, promedio) "
-                    + "VALUES ('%s', '%s', %s, %s, %s, %s)",
+                    + "calificacion1, calificacion2, calificacion3) "
+                    + "VALUES ('%s', '%s', %s, %s, %s)",
                     estudiantes.obtenerNombre(),
                     estudiantes.obtenerApellido(),
                     estudiantes.obtenerCalificacion1(),
                     estudiantes.obtenerCalificacion2(),
-                    estudiantes.obtenerCalificacion3(),
-                    estudiantes.obtenerPromedio());
+                    estudiantes.obtenerCalificacion3());
             
             statement.executeUpdate(data);
             obtenerConexion().close();
             
         } catch (SQLException e) {
-            System.out.println("Exception: insertarCiudad");
             System.out.println(e.getMessage());
 
         }
