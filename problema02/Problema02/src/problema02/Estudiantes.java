@@ -71,11 +71,11 @@ public class Estudiantes {
     @Override
     public String toString() {
         String x = String.format("%s %s\n"
-                + "Calificaciones:\n"
-                + "%.2f\n"
-                + "%.2f\n"
-                + "%.2f\n"
-                + "Promedio= %.2f\n", obtenerNombre(),
+                + " Calificaciones:\n"
+                + " %.2f\n"
+                + " %.2f\n"
+                + " %.2f\n"
+                + " Promedio= %.2f\n", obtenerNombre(),
                 obtenerApellido(), obtenerCalificacion1(),
                 obtenerCalificacion2(),
                 obtenerCalificacion3(), obtenerPromedio());

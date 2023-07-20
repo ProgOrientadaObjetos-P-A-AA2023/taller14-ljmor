@@ -61,3 +61,6 @@ Rosa Jara
   5.9
   Promedio ?
 ```
+
+
+Integrantes: Luis Mora y Roberto Bustamante
